@@ -2,14 +2,12 @@ compute_environment: LOCAL_MACHINE
 debug: false
 distributed_type: XLA
 downcast_bf16: 'no'
-dynamo_config:
-  dynamo_backend: TENSORRT
 enable_cpu_affinity: false
 machine_rank: 0
 main_training_function: main
 mixed_precision: 'no'
 num_machines: 1
-num_processes: 8
+num_processes: 1
 rdzv_backend: static
 same_network: true
 tpu_env: []
